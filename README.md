@@ -1,7 +1,7 @@
 # Learn-Lua
 
-Used to record lua learn realted knowledge, enjoy it if you like!  
+Used to record lua learn realted knowledge, enjoy it if you like!
 
-Wechat: 373061200  
+*Wechat: 373061200*
 
-**Write by Sean WANG
+**Write by Sean WANG**
