@@ -32,7 +32,7 @@ print(type(print))              --> function
 print(type(type))               --> function
 
 myTable = {}
-print(type(myTable))
+print(type(myTable))            --> table
 
 myTable[1]= "Hello"
 myTable[2]= "Lua"
@@ -84,7 +84,7 @@ repeat
 	b = b - 1
 until (b == 0)
 
-days = {"Suanday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"}
+days = {"Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"}
 for i,v in ipairs(days)
 do
 	print(v)
