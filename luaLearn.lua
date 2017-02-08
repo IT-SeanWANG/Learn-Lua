@@ -20,6 +20,7 @@ print(a)
 a = 10
 print(a)
 
+
 --3. 8 basic data type: nil/boolean/number/string/userdata/function/thread and table
 print(type(nil))                --> nil
 print(type(true))               --> boolean
@@ -30,21 +31,68 @@ print(type(type(X)))            --> string
 print(type(print))              --> function
 print(type(type))               --> function
 
+
 --4. variable
 local b = 11.12
 print(b)
 
+
+--5. table
+info = {}
+info['key'] = "Hello Lua"
+print(info['key'])
+print(info.key)
+
+
+--6. flow control
 if (0) then
 	print("0 is true")
 end
 
+if (1 > 2) then
+	print ("1 > 2")
+elseif (2 > 2) then
+	print ("2>2")
+else
+	print("3 > 2")
+end
+
+
+--7. loop
+a = 10
+while(a > 0)
+do
+	print("the value of a is ", a)
+	a = a - 1
+end
+
+b = 10
+repeat
+	print("the value of b is ", b)
+	b = b - 1
+until (b == 0)
+
+days = {"Suanday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"}
+for i,v in ipairs(days)
+do
+	print(v)
+end
+
+
+--8. function
+function max(num1, num2)
+   if (num1 > num2) then
+      result = num1;
+   else
+      result = num2;
+   end
+   return result;
+end
+print("the larger one is ",max(1, 2))
+
+--Misc
 a = "Hello "
-b = "Lua"
+b = "World"
 print("连接字符串 a 和 b", a..b)
 print("连接字符a的长度", #a)
-
-
-
-
-
 
