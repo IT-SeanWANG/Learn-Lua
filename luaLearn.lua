@@ -31,6 +31,18 @@ print(type(type(X)))            --> string
 print(type(print))              --> function
 print(type(type))               --> function
 
+myTable = {}
+print(type(myTable))
+
+myTable[1]= "Hello"
+myTable[2]= "Lua"
+print(myTable[1], myTable[2])
+print(table.concat(myTable))
+
+fruits = {"Banana","Orange","Apple"}
+table.sort(fruits)
+print("after sort is ", table.concat(fruits))
+
 
 --4. variable
 local b = 11.12
@@ -90,9 +102,36 @@ function max(num1, num2)
 end
 print("the larger one is ",max(1, 2))
 
---Misc
+
+--9. string
+print(string.upper("hello lua"))
+print(string.lower("Hello Lua"))
+print(string.gsub("Hello lua", "lua", "Lua", 3))
+print(string.reverse("Hello Lua"))
+print(string.char(97,98,99,100))
+print(string.byte("abcde",2))
+print(string.len("abcde"))
+
 a = "Hello "
 b = "World"
 print("连接字符串 a 和 b", a..b)
 print("连接字符a的长度", #a)
+
+
+--10. array start from 1
+array = {"Hello", "Lua"}
+for i= 1, 2 do
+   print(array[i])
+end
+
+
+--11. iterator
+array = {"Hello", "Lua", "!"}
+for key,value in ipairs(array)
+do
+   print(key, value)
+end
+
+
+--Misc
 
